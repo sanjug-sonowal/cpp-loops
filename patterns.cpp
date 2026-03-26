@@ -21,10 +21,19 @@ public:
             cout<<"\n";
         }
     }
+
+    void pattern2(int n){
+        for(int i = 0; i < n; i++){
+            for(int j = i; j < n; j++){
+                cout<<" *";
+            }
+            cout<<endl;
+        }
+    }
 };
 
 int main(){
     Pattern p1;
-    p1.pattern1(5);
+    p1.pattern2(5);
     return 0;
 }
